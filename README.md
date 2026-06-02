@@ -10,6 +10,7 @@ This paper proposes an Uncertainty-Aware Adaptive Nonlinear Model Predictive Con
 
 
 # Experimental Platform
+The paper's simulation for the experimental platform was designed by our team, as following:
 https://github.com/user-attachments/assets/ce0041b9-43fa-49bb-8219-694d21e13fd3
 
 
