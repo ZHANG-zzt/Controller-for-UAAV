@@ -6,3 +6,8 @@ This paper proposes an Uncertainty-Aware Adaptive Nonlinear Model Predictive Con
 * Ignition Gazebo simulator
 * Ubuntu 20.04/22.04
 * Python 3.9+
+
+
+
+# Experimental Platform
+https://github.com/user-attachments/assets/ce0041b9-43fa-49bb-8219-694d21e13fd3
