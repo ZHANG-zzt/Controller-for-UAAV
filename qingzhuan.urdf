@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="fishbot_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0203979412593963 3.09677478606503E-05 -0.0663253305787748"
+        rpy="0 0 0" />
+      <mass
+        value="23.6493711501459" />
+      <inertia
+        ixx="0.167435173205133"
+        ixy="-3.93968680715593E-05"
+        ixz="0.00162157468081686"
+        iyy="0.564141251806632"
+        iyz="-2.65238797720016E-05"
+        izz="0.605860465318713" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="lf_trust_Link">
+    <inertial>
+      <origin
+        xyz="0.00177502838402294 1.84151246429565E-06 0.028260753852261"
+        rpy="0 0 0" />
+      <mass
+        value="0.123180299011564" />
+      <inertia
+        ixx="9.55211784035417E-05"
+        ixy="-2.16729119714151E-10"
+        ixz="7.23021349878111E-07"
+        iyy="9.55319289864784E-05"
+        iyz="4.88581547224127E-10"
+        izz="4.59156209308166E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/lf_trust_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/lf_trust_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf_trust_joint"
+    type="continuous">
+    <origin
+      xyz="0.478041692713242 0.500998223285421 0.104303304822013"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lf_trust_Link" />
+    <axis
+      xyz="0.0145829404618181 0 -0.999893663269994" />
+  </joint>
+  <link
+    name="rf_trust_Link">
+    <inertial>
+      <origin
+        xyz="0.00177484532537597 -1.78448329313241E-06 0.0282613791157521"
+        rpy="0 0 0" />
+      <mass
+        value="0.12317698881197" />
+      <inertia
+        ixx="9.55176911126248E-05"
+        ixy="3.08156781462839E-12"
+        ixz="7.23425182600838E-07"
+        iyy="9.55282342706965E-05"
+        iyz="-1.74251412744812E-10"
+        izz="4.59160129608577E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/rf_trust_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/rf_trust_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf_trust_joint"
+    type="continuous">
+    <origin
+      xyz="0.478041849988118 -0.500998270401087 0.104303363818006"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rf_trust_Link" />
+    <axis
+      xyz="0.0145829404618196 0 -0.999893663269994" />
+  </joint>
+  <link
+    name="lb_trust_Link">
+    <inertial>
+      <origin
+        xyz="0.00177613622487111 1.73692487315247E-06 0.0382613813450537"
+        rpy="0 0 0" />
+      <mass
+        value="0.123177061303634" />
+      <inertia
+        ixx="9.5517754082226E-05"
+        ixy="2.88363164078289E-13"
+        ixz="7.2370926764631E-07"
+        iyy="9.55282997662876E-05"
+        iyz="5.57177318822818E-11"
+        izz="4.59160280833228E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/lb_trust_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/lb_trust_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lb_trust_joint"
+    type="continuous">
+    <origin
+      xyz="-0.48147781143705 0.500998270401085 0.101349058893574"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lb_trust_Link" />
+    <axis
+      xyz="0.0145829404618195 0 -0.999893663269994" />
+  </joint>
+  <link
+    name="rb_trust_Link">
+    <inertial>
+      <origin
+        xyz="0.00177599539858642 -1.80838963048657E-06 0.0382607471221007"
+        rpy="0 0 0" />
+      <mass
+        value="0.123180392282821" />
+      <inertia
+        ixx="9.55212512766435E-05"
+        ixy="-2.17526417773044E-10"
+        ixz="7.24278025351509E-07"
+        iyy="9.55319996936334E-05"
+        iyz="-3.49980406261111E-10"
+        izz="4.59157026422479E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/rb_trust_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/rb_trust_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rb_trust_joint"
+    type="continuous">
+    <origin
+      xyz="-0.481477652508579 -0.500998223285423 0.101349004509231"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rb_trust_Link" />
+    <axis
+      xyz="0.0145829404618195 0 -0.999893663269994" />
+  </joint>
+  <link
+    name="front_Link">
+    <inertial>
+      <origin
+        xyz="0.00936642316201552 -0.00712798975782724 0.0161728878255319"
+        rpy="0 0 0" />
+      <mass
+        value="6.77228789226799" />
+      <inertia
+        ixx="0.0932081983708734"
+        ixy="-1.11124118785366E-07"
+        ixz="5.91344898253801E-05"
+        iyy="0.0129990891114384"
+        iyz="-5.78032853034141E-07"
+        izz="0.089706385278355" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/front_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/front_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front"
+    type="continuous">
+    <origin
+      xyz="0.470661622815954 0.00711474391571486 0.118469043291296"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="behind_link">
+    <inertial>
+      <origin
+        xyz="-0.0125441869307014 0.000772214956805556 0.00542104621400397"
+        rpy="0 0 0" />
+      <mass
+        value="6.77228468651154" />
+      <inertia
+        ixx="0.0932086294161215"
+        ixy="-1.23784134316496E-07"
+        ixz="4.30460010137262E-05"
+        iyy="0.0129990923274977"
+        iyz="5.58906115933048E-07"
+        izz="0.0897058608126721" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/behind_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fishbot_description/meshes/behind_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="behind"
+    type="continuous">
+    <origin
+      xyz="-0.467429105564766 -0.000758709550561051 0.136259569312877"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="behind_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
