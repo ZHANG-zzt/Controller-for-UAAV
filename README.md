@@ -18,11 +18,18 @@ https://github.com/user-attachments/assets/ce0041b9-43fa-49bb-8219-694d21e13fd3
 
 
 # How to use
+First, start the simulation  platform
 ```
 source install/setup.bash
 source /opt/ros/humble/setup.bash
 ros2 launch fishbot_description display_rviz2.launch.py
 ```
+Next, execute tracking task
+```
+export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+python ../gp_ac_mpc_ros2.py 
+```
+
 
 
 # Simulation Video
