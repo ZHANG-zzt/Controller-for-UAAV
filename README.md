@@ -17,8 +17,15 @@ https://github.com/user-attachments/assets/ce0041b9-43fa-49bb-8219-694d21e13fd3
 
 
 
+# How to use
+```
+source install/setup.bash
+source /opt/ros/humble/setup.bash
+ros2 launch fishbot_description display_rviz2.launch.py
+```
 
-# Simulation
+
+# Simulation Video
 https://github.com/user-attachments/assets/3a1625ee-a8ba-40c1-b128-755e1a9ec005
 
 # Getting Help
