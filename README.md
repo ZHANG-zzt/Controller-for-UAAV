@@ -15,8 +15,19 @@ The paper's simulation for the experimental platform was designed by our team, a
 https://github.com/user-attachments/assets/ce0041b9-43fa-49bb-8219-694d21e13fd3
 
 
+
+
+
+# Simulation
+https://github.com/user-attachments/assets/3a1625ee-a8ba-40c1-b128-755e1a9ec005
+
 # Getting Help
 If you have any questions about using or contributing to this program, please ask on our discussion board!
+
+
+
+
+
 
 
 # Acknowledgement
